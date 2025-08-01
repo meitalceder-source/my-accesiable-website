@@ -24,7 +24,12 @@ header h1 {
 .main-title {
     font-size: 2.5em;  /* Adjust as needed */
 }
-
+@media (max-width: 600px) {
+  .main-title {
+    font-size: 2.0em; /* or try 1.2em, 20px, etc. */
+    white-space: nowrap; /* Prevent breaking into multiple lines */
+  }
+}
 .subtitle {
     font-size: 1.5em;  /* Adjust as needed */
 }
