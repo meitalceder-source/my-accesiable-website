@@ -26,7 +26,7 @@ header h1 {
 }
 @media (max-width: 600px) {
   .main-title {
-    font-size: 1.5em; /* or try 1.2em, 20px, etc. */
+    font-size: 20px; /* or try 1.2em, 20px, etc. */
     white-space: nowrap; /* Prevent breaking into multiple lines */
   }
 }
