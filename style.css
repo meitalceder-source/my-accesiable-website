@@ -21,6 +21,13 @@ header h1 {
 	height: auto;
 	margin-bottom: 1em;
 }
+.main-title {
+    font-size: 2.5em;  /* Adjust as needed */
+}
+
+.subtitle {
+    font-size: 1.5em;  /* Adjust as needed */
+}
 nav {
 	background-color: #005bb5;
 	padding: 1em;
