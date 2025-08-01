@@ -17,10 +17,18 @@ header h1 {
 	font-size: 2.5em;
 }
 .logo {
-	width: 200px;
-	height: auto;
-	margin-bottom: 1em;
-  	width: 30%;
+  width: 210px;      /* or your preferred desktop size */
+  height: auto;
+  max-width: 100%;   /* prevents overflow on small screens */
+}
+
+/* On small screens, increase the logo size or set a minimum width */
+@media (max-width: 600px) {
+  .logo {
+    width: 140px;    /* try a larger value if it's too small, or use min-width */
+    min-width: 100px; /* optional: ensures it's never too small */
+    height: auto;
+  }
 }
 .main-title {
     font-size: 2.5em;  /* Adjust as needed */
