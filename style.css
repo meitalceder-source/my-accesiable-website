@@ -1,0 +1,87 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
+	color: #333;
+	line-height: 1.6;
+}
+header {
+	background-color: #004aad;
+	color: white;
+	text-align: center;
+	padding: 2em;
+}
+header h1 {
+	margin: 0;
+	font-size: 2.5em;
+}
+.logo {
+	width: 150px;
+	height: auto;
+	margin-bottom: 1em;
+}
+nav {
+	background-color: #005bb5;
+	padding: 1em;
+}
+nav a {
+	color: white;
+	text-decoration: none;
+	margin: 0 1em;
+	font-size: 1.1em;
+}
+nav a:hover {
+	text-decoration: underline;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2em;
+}
+.section {
+	background-color: white;
+	padding: 2em;
+	margin-bottom: 2em;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h2 {
+	color: #004aad;
+}
+.contact-form {
+	max-width: 600px;
+	margin: 0 auto;
+}
+.contact-form label {
+	display: block;
+	margin-bottom: 0.5em;
+	font-weight: bold;
+}
+.contact-form input, .contact-form textarea {
+	width: 100%;
+	padding: 0.5em;
+	margin-bottom: 1em;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+.contact-form button {
+	background-color: #004aad;
+	color: white;
+	padding: 0.75em 1.5em;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.contact-form button:hover {
+	background-color: #005bb5;
+}
+footer {
+	background-color: #004aad;
+	color: white;
+	text-align: center;
+	padding: 1em;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+}

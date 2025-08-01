@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>עו"ד מיטל צדרבוים - נדל"ן, גישור משפחה וצוואות</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+		<img class="logo" src="meital_law_log.png" alt="לוגו משרד עו״ד מיטל צדרבוים">
+		<h1>עו"ד מיטל צדרבוים</h1>
+		<p>מומחית בנדל"ן, גישור משפחה וצוואות</p>
+	</header>		
+    <nav>
+        <a href="#home">בית</a>
+        <a href="#about">אודות</a>
+        <a href="#services">שירותים</a>
+        <a href="#contact">צור קשר</a>
+    </nav>
+    <div class="container">
+        <div id="about" class="section">
+            <h2>אודות עו"ד מיטל צדרבוים</h2>
+            <p>עו"ד מיטל צדרבוים הינה בעלת תואר ראשון בפסיכולוגיה ומנהל עסקים, וכן תואר ראשון במשפטים. עם ניסיון רב בתחום הנדל"ן, גישור משפחתי וצוואות, מיטל מספקת שירות מקצועי ואישי המותאם לצרכי הלקוח.</p>
+        </div>
+        <div id="services" class="section">
+            <h2>שירותים משפטיים</h2>
+            <h3>עסקות נדל"ן</h3>
+            <p>עסקות נדל"ן כוללות מגוון פעולות משפטיות הקשורות לקנייה, מכירה, השכרה או ניהול של נכסים. בין אם מדובר ברכישת דירה, השקעה בנכס מסחרי או עריכת חוזים, אנו מספקים ליווי משפטי מקיף להבטחת זכויות הלקוח.</p>
+            <h3>גישור בענייני משפחה</h3>
+            <p>גישור משפחתי הוא תהליך שבו צדדים בסכסוך משפחתי, כגון גירושין או סכסוכות ירושה, מגיעים להסכמות בעזרת מגשר ניטרלי. התהליך מאפשר פתרון סכסוכות בצורה מכבדת וחסכונית, תוך שמירה על יחסים תקינים בין הצדדים.</p>
+        </div>
+        <div id="contact" class="section">
+            <h2>צור קשר</h2>
+            <p>ליצירת קשר עם עו"ד מיטל צדרבוים, אנא מלאו את הטופס הבא:</p>
+            <div class="contact-form">
+                <div>
+                    <label for="name">שם מלא:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">דוא"ל:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">הודעה:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button onclick="sendEmail()">שלח</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>צרו קשר: טלפון: <a href="tel:0545444575">054-5444575</a> | דוא"ל: <a href="mailto:meitalceder@gmail.com">meitalceder@gmail.com</a></p>
+        <p>&copy; 2025 עו"ד מיטל צדרבוים. כל הזכויות שמורות.</p>
+    </footer>
+    <script>
+        function sendEmail() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            const subject = encodeURIComponent(`פנייה מאתר עו"ד מיטל צדרבוים`);
+            const body = encodeURIComponent(`שם: ${name}\nדוא"ל: ${email}\n\nהודעה:\n${message}`);
+            window.location.href = `mailto:meitalceder@gmail.com?subject=${subject}&body=${body}`;
+        }
+    </script>
+</body>
+</html>
